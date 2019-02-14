@@ -1,29 +1,52 @@
 {
-  "name": "jsonresume-theme-elite",
-  "version": "1.1.2",
-  "description": "Elite theme for JSONResume",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r babel-register ./node_modules/.bin/gulp && node -r babel-register ./node_modules/.bin/gulp serve",
-    "build": "node -r babel-register ./node_modules/.bin/gulp",
-    "export": "node -r babel-register ./node_modules/.bin/gulp export --page-format A4",
-    "prepublishOnly": "npm run build"
+  "_from": "jsonresume-theme-elite",
+  "_id": "jsonresume-theme-elite@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-9P08hs25c95r/PW4gGHwDbUx82cTU2S4AXo2KOxISnkPJfF0O1FaWPdaLINdHfXvoCaW49YxAcSu918c0XpTEA==",
+  "_location": "/jsonresume-theme-elite",
+  "_phantomChildren": {
+    "minimist": "0.0.8",
+    "wordwrap": "0.0.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nass600/jsonresume-theme-elite.git"
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsonresume-theme-elite",
+    "name": "jsonresume-theme-elite",
+    "escapedName": "jsonresume-theme-elite",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "keywords": [
-    "jsonresume",
-    "jsonresume-theme"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "author": "Ignacio Velazquez <ivelazquez85@gmail.com>",
-  "license": "MIT",
+  "_resolved": "https://registry.npmjs.org/jsonresume-theme-elite/-/jsonresume-theme-elite-1.1.2.tgz",
+  "_shasum": "be021cdfa3b8d00d848dc756592f316cad73514e",
+  "_spec": "jsonresume-theme-elite",
+  "_where": "N:\\src\\side-projects\\cv",
+  "author": {
+    "name": "Ignacio Velazquez",
+    "email": "ivelazquez85@gmail.com"
+  },
   "bugs": {
     "url": "https://github.com/nass600/jsonresume-theme-elite/issues"
   },
-  "homepage": "https://github.com/nass600/jsonresume-theme-elite#readme",
+  "bundleDependencies": false,
+  "dependencies": {
+    "address-format": "0.0.3",
+    "bootstrap": "^4.0.0-beta.3",
+    "gulp-svgmin": "^1.2.4",
+    "handlebars": "^4.1.0",
+    "handlebars-wax": "^4.0.0",
+    "html-pdf": "^2.1.0",
+    "moment": "^2.17.1",
+    "pluralize": "^4.0.0",
+    "swag": "^0.7.0"
+  },
+  "deprecated": false,
+  "description": "Elite theme for JSONResume",
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
@@ -65,15 +88,24 @@
     "stylelint-config-standard": "^16.0.0",
     "yargs": "^6.6.0"
   },
-  "dependencies": {
-    "address-format": "0.0.3",
-    "bootstrap": "^4.0.0-beta.3",
-    "gulp-svgmin": "^1.2.4",
-    "handlebars": "^4.0.5",
-    "handlebars-wax": "^4.0.0",
-    "html-pdf": "^2.1.0",
-    "moment": "^2.17.1",
-    "pluralize": "^4.0.0",
-    "swag": "^0.7.0"
-  }
+  "homepage": "https://github.com/nass600/jsonresume-theme-elite#readme",
+  "keywords": [
+    "jsonresume",
+    "jsonresume-theme"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "jsonresume-theme-elite",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nass600/jsonresume-theme-elite.git"
+  },
+  "scripts": {
+    "build": "node -r babel-register ./node_modules/.bin/gulp",
+    "export": "node -r babel-register ./node_modules/.bin/gulp export --page-format A4",
+    "prepublishOnly": "npm run build",
+    "start": "node -r babel-register ./node_modules/.bin/gulp && node -r babel-register ./node_modules/.bin/gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.2"
 }

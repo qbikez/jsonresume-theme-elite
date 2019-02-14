@@ -54,8 +54,17 @@ handlebars.registerHelper({
     }
 
     return accum
+  },
+  paragraphSplit: (plaintext) => {
+    const lines = plaintext instanceof Array ? plaintext.map(l => l.split(/\r\n|\r|\n/g)).reduce((flat, toFlatten) => flat.concat(toFlatten), []) : plaintext.split(/\r\n|\r|\n/g);
+    const output = lines.filter(line => line).reduce((a, b) => `${a}<p>${b}</p>`, '');
+    return new handlebars.SafeString(output);
+  },
+  safeString: (plaintext) => {
+    return new handlebars.SafeString(plaintext.trim());
   }
 })
+
 
 function render (resume, pageFormat, themeConfig) {
   let css = fs.readFileSync(path.join(__dirname, config.paths.styles.entry), 'utf-8')
